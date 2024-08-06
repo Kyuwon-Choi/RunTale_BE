@@ -192,21 +192,5 @@ public class RunningService {
         return totalRunningCount > 0 ? totalPace / totalRunningCount : 0;
     }
 
-//    public ScenarioStep checkScenarioStep(Long runningId, double distance) {
-//        Running running = runningRepository.findById(runningId)
-//                .orElseThrow(() -> new NotFoundException(ErrorMessage.RUNNING_NOT_FOUND));
-//
-//        Scenario scenario = running.getScenario();
-//        if (scenario == null) {
-//            // 시나리오가 없는 경우의 로직 처리 (예: 그냥 null 반환)
-//            return null;
-//        }
-//
-//        // 거리 기준으로 시나리오 단계 체크
-//        int stepNumber = determineStepNumber(distance);
-//        return scenario.getSteps().stream()
-//                .filter(step -> step.getStepNumber() == stepNumber)
-//                .findFirst()
-//                .orElseThrow(() -> new NotFoundException(ErrorMessage.SCENARIO_STEP_NOT_FOUND));
-//    }
+
 }
