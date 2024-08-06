@@ -156,7 +156,7 @@ public class RunningService {
         List<Running> allRunnings = runningRepository.findAll();
         allRunnings.stream()
                 .filter(running -> running.getStatus() == RunningStatus.IN_PROGRESS && running.getLastModifiedDate().plusMinutes(TTL_MINUTES).isBefore(now)
-                        || (running.getStatus() == RunningStatus.COMPLETED && running.getPace() == null))
+                        || running.getDistance() == 0)
                 .forEach(running -> {
                     User user = running.getUser();
                     if (user != null) {
@@ -169,7 +169,7 @@ public class RunningService {
     public RunningStatsResponse getRunningStats(Long userId, LocalDateTime startDate, LocalDateTime endDate) {
         List<Running> runnings = runningRepository.findByUserIdAndDateRange(userId, startDate, endDate)
                 .stream()
-                .filter(running -> running.getStatus() == RunningStatus.COMPLETED && running.getPace() != null) // Add null check for pace
+                .filter(running -> running.getStatus() == RunningStatus.COMPLETED && running.getDistance() != 0) // Add null check for pace
                 .collect(Collectors.toList());
 
         int totalRunningCount = runnings.size();
