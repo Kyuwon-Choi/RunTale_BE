@@ -16,7 +16,7 @@
   5. [러닝 목표 달성](#5-러닝-기록)
   6. [이달의 기록](#6-이달의-기록)
   7. [티어 시스템](#7-티어-시스템)
-- [Backend Developers](#[Backend-Developers])
+- [Backend Developers](#Backend-Developers)
 
 ## 프로젝트 개요
 
