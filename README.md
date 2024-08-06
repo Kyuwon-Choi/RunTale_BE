@@ -1,5 +1,6 @@
 # RunTale_BE
-이야기와 함께하는 즐거운 러닝의 시작 런테일 백엔드 레포지토리
+<img width="1164" alt="스크린샷 2024-08-06 오후 10 58 29" src="https://github.com/user-attachments/assets/aeec1a99-81f7-46aa-ac67-25699851dbc3">
+🏃‍♂️이야기와 함께하는 즐거운 러닝의 시작 런테일 백엔드 레포지토리🏃‍♂
 
 ## 목차
 
