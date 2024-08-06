@@ -192,5 +192,5 @@ public class RunningService {
         return totalRunningCount > 0 ? totalPace / totalRunningCount : 0;
     }
 
-
+    //
 }
